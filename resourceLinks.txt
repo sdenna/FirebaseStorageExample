@@ -1,0 +1,7 @@
+https://docs.expo.dev/versions/latest/sdk/imagepicker/
+
+
+
+Install Statements
+npm i @expo/ngrok@^4.1.0
+npx expo install expo-image-picker
