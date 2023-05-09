@@ -1,7 +1,20 @@
 https://docs.expo.dev/versions/latest/sdk/imagepicker/
 
+Successful tutorial:
+https://dev.to/adii9/uploading-images-to-firebase-storage-in-react-native-with-expo-workflow-24kj
+
 
 
 Install Statements
+
 npm i @expo/ngrok@^4.1.0
 npx expo install expo-image-picker
+npm install firebase
+npm install expo-camera
+
+
+
+Warnings that should be looked into for possible deprecated code:
+
+ Key "cancelled" in the image picker result is deprecated and will be removed in SDK 48, use "canceled" instead
+ Key "uri" in the image picker result is deprecated and will be removed in SDK 48, you can access selected assets through the "assets" array instead
