@@ -18,13 +18,11 @@ export default function UploadScreen () {
             quality: 1,
         });
 
-        // got this warning from running code:
-        //  Key "uri" in the image picker result is deprecated and will be removed in SDK 48, you can access selected assets through the "assets" array instead
 
-        console.log(result);
+        console.log(result.assets);
 
         if (!result.canceled) {
-            setImage(result.uri);
+            setImage(result.assets[0].uri)  // new code:
         }
     };
 

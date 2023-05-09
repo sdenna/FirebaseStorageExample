@@ -18,3 +18,10 @@ Warnings that should be looked into for possible deprecated code:
 
  Key "cancelled" in the image picker result is deprecated and will be removed in SDK 48, use "canceled" instead
  Key "uri" in the image picker result is deprecated and will be removed in SDK 48, you can access selected assets through the "assets" array instead
+    Here is how to fix those issues in the pickImage method:
+
+            if (!result.canceled) {
+            // old code that is deprecated had:   setImage(result.uri);
+            // new code:
+            setImage(result.assets[0].uri)
+        }
